@@ -1,1 +1,6 @@
 # music-recommendation-system-using-machine-learning
+Emotion-Based Music Recommendation System is a web application that suggests songs according to the facial expressions of the user. It is implemented on Python and Streamlit and utilizes a webcam to record live images and applies OpenCV's Haar Cascade classifier to detect and cut the face of the user. The cropped images are then sent to a pre-trained convolutional neural network (CNN) model that identifies facial emotions like Happy, Sad, Angry, Neutral, and others.
+
+The model takes about 30–40 frames and processes them in a few seconds to make more accurate predictions of emotions. These identified emotions are further summed up and ranked according to frequency. Once duplicate filtering is done, the system employs this cleaned list of emotions to suggest songs from a handpicked dataset. The dataset associates each song with emotional and valence tags, ensuring the music is as close as possible to matching the user's emotional state.
+
+Every suggested song has a link to search for it on YouTube for immediate listening. The interface is interactive and simple, providing a fun and enjoyable method of finding music that suits your mood. Used libraries include TensorFlow, Keras, OpenCV, and Pandas, making this an extensive project that combines computer vision, machine learning, and music data analysis.
